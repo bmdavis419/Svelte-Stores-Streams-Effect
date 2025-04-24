@@ -1,13 +1,12 @@
 import { Completions } from '@effect/ai';
 import { OpenAiClient, OpenAiCompletions } from '@effect/ai-openai';
-import { Config, Effect, Layer } from 'effect';
+import { Effect, Layer } from 'effect';
 import { NodeHttpClient } from '@effect/platform-node';
-import { OPENAI_API_KEY } from '$env/static/private';
 
 const FourOMini = OpenAiCompletions.model('gpt-4o-mini');
 
 const OpenAi = OpenAiClient.layerConfig({
-	apiKey: Config.redacted(Config.string('OPENAI_API_KEY').pipe(Config.withDefault(OPENAI_API_KEY)))
+	// apiKey: Config.redacted(Config.string('OPENAI_API_KEY').pipe(Config.withDefault(OPENAI_API_KEY)))
 });
 
 const OpenAiWithHttp = Layer.provide(OpenAi, NodeHttpClient.layerUndici);
