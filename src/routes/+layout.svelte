@@ -8,6 +8,7 @@
 	<nav class="flex w-full items-center gap-4 bg-neutral-950 px-6 py-4">
 		<a href="/">Home</a>
 		<a href="/store">Store</a>
+		<a href="/store-with-api">Store with API</a>
 	</nav>
 	{@render children()}
 	<footer class="flex w-full items-center justify-center bg-neutral-950 px-6 py-4">
