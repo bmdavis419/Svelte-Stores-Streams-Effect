@@ -8,5 +8,6 @@
 	<ul class="flex flex-col gap-2">
 		<li class="text-neutral-200"><a href="/store">Example of Store</a></li>
 		<li class="text-neutral-200"><a href="/store-with-api">Example of Store with API</a></li>
+		<li class="text-neutral-200"><a href="/context">Example of Context</a></li>
 	</ul>
 </div>
